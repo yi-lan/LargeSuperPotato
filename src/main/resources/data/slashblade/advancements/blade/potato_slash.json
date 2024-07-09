@@ -1,0 +1,30 @@
+{
+  "display": {
+    "title": {
+      "translate": "adv.item.slashblade.potatoslash.title"
+    },
+    "description": {
+      "translate": "adv.item.slashblade.potatoslash.des"
+    },
+    "icon": {
+      "item": "slashblade:slashblade",
+      "nbt": "{SlashBladeIcon:{ForgeCaps:{\"slashblade:bladestate\":{Energy:0,Stage:{isNoScabbard:0b,isBroken:1b,TextureName:\"slashblade:model/potato_blade.png\",ModelName:\"slashblade:model/blade.obj\"}}}}}"
+    },
+    "frame": "task",
+    "hidden": true
+  },
+  "parent": "slashblade:root",
+  "criteria": {
+    "crafting": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["slashblade:slashblade"],
+            "nbt": "{ShareTag:{translationKey:\"item.largesuperpotato.potato_blade\"}}"
+          }
+        ]
+      }
+    }
+  }
+}

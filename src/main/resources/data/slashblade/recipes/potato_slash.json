@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "JAB",
+    "CDE",
+    " G "
+  ],
+  "key": {
+    "D": {
+      "item": "largesuperpotato:potatosword"
+    },
+    "J": {
+      "item": "largesuperpotato:cxk_potato"
+    },
+    "A": {
+      "item": "largesuperpotato:golden_potato"
+    },
+    "C": {
+      "item": "largesuperpotato:diamond_potato"
+    },
+    "E": {
+      "item": "largesuperpotato:netherite_potato"
+    },
+    "G": {
+      "item": "largesuperpotato:emerald_potato"
+    },
+    "B": {
+      "item": "largesuperpotato:nether_star_potato"
+    }
+  },
+  "result": {
+    "item": "slashblade:slashblade",
+    "nbt": {
+      "ForgeCaps": {
+        "slashblade:bladestate": {
+          "Energy": 0,
+          "State": {
+            "ShareTag": {},
+            "translationKey": "item.largesuperpotato.potato_blade",
+            "TextureName": "slashblade:model/potato_blade.png",
+            "ModelName": "slashblade:model/blade.obj",
+            "SummonedSwordColor": -13421569,
+            "rarityType": 3,
+            "baseAttackModifier": 6.0,
+            "AttackAmplifier": 0.0,
+            "RepairCounter": 0,
+            "isSealed": 0,
+            "isDestructable": 0,
+            "isNoScabbard": 0,
+            "isBroken": 0
+          }
+        }
+      },
+      "id": "slashblade:slashblade",
+      "Count": 1,
+      "tag": {
+        "ShareTag": {}
+      }
+    }
+  }
+}
