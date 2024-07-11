@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ACA",
+    "CBC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:spider_eye"
+    },
+    "B": {
+      "item": "minecraft:potato"
+    },
+    "C": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "largesuperpotato:spider_potato"
+  }
+}

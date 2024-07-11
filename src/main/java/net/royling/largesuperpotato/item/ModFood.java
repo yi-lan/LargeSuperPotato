@@ -6,6 +6,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 
 public class ModFood {
+    // <editor-fold desc="1.0food">
     public static final FoodProperties PIGOTATO =new FoodProperties.Builder()
             .alwaysEat().nutrition(2).saturationMod(0.1f).build();
 
@@ -91,7 +92,22 @@ public class ModFood {
             .alwaysEat().nutrition(6).saturationMod(0.5f).build();
     public static final FoodProperties BASKET_POTATO =new FoodProperties.Builder()
             .alwaysEat().nutrition(6).saturationMod(0.5f).build();
-
-
+    // </editor-fold>
+    public static final FoodProperties POTATO_FISH =new FoodProperties.Builder()
+            .alwaysEat().nutrition(3).saturationMod(0.2f).build();
+    public static final FoodProperties COOKED_POTATO_FISH =new FoodProperties.Builder()
+            .alwaysEat().nutrition(7).saturationMod(0.5f).build();
+    public static final FoodProperties POTATO_PIECE =new FoodProperties.Builder()
+            .alwaysEat().nutrition(1).saturationMod(0.1f).build();
+    public static final FoodProperties POTATO_CHIPS =new FoodProperties.Builder()
+            .alwaysEat().nutrition(1).saturationMod(0.1f).build();
+    public static final FoodProperties POTATO_KETCHUP =new FoodProperties.Builder()
+            .alwaysEat().nutrition(2).saturationMod(0.1f).build();
+    public static final FoodProperties MASHED_POTATO =new FoodProperties.Builder()
+            .alwaysEat().nutrition(3).saturationMod(0.2f).build();
+    public static final FoodProperties TOMATO_CHIPS =new FoodProperties.Builder()
+            .alwaysEat().nutrition(1).saturationMod(0.2f).build();
+    public static final FoodProperties TOMATO_CHIPS_AND_POTATO_KETCHUP =new FoodProperties.Builder()
+            .alwaysEat().nutrition(10).saturationMod(0.8f).build();
 
 }

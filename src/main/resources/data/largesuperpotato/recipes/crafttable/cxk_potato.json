@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AB"
+  ],
+  "key": {
+    "A": {
+      "item": "largesuperpotato:chicken_potato"
+    },
+    "B": {
+      "item": "largesuperpotato:basket_potato"
+    }
+  },
+  "result": {
+    "item": "largesuperpotato:cxk_potato",
+    "count": 1
+  }
+}

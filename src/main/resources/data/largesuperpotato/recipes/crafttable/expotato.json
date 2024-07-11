@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:experience_bottle"
+    },
+    "B": {
+      "item": "minecraft:potato"
+    }
+  },
+  "result": {
+    "item": "largesuperpotato:expotato"
+  }
+}

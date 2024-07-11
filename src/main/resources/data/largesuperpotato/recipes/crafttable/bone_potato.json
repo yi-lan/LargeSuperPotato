@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:bone_meal"
+    },
+    "B": {
+      "item": "minecraft:potato"
+    }
+  },
+  "result": {
+    "item": "largesuperpotato:bone_potato"
+  }
+}

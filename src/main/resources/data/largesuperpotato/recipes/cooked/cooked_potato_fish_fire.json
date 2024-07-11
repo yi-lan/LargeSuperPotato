@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "item": "largesuperpotato:potato_fish"
+  },
+  "result": "largesuperpotato:cooked_potato_fish",
+  "cookingtime": 100
+}

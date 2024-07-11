@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:ghast_tear"
+    },
+    "B": {
+      "item": "minecraft:potato"
+    }
+  },
+  "result": {
+    "item": "largesuperpotato:heart_potato",
+    "count": 1
+  }
+}

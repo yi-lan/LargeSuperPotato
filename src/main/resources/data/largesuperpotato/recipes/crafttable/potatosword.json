@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "A",
+    "B",
+    "C"
+  ],
+  "key": {
+    "A": {
+      "item": "largesuperpotato:compress_potato"
+    },
+    "B": {
+      "item": "largesuperpotato:compress_potato"
+    },
+    "C": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "largesuperpotato:potatosword",
+    "count": 1
+  }
+}

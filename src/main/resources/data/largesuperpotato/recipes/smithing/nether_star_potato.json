@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "largesuperpotato:nether_star_update_template"
+  },
+  "base": {
+    "item": "largesuperpotato:netherite_potato"
+  },
+  "addition": {
+    "item": "minecraft:nether_star"
+  },
+  "result": {
+    "item": "largesuperpotato:nether_star_potato"
+  }
+}

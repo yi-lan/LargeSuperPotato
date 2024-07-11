@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CAC",
+    "ABA",
+    "CAC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:potato"
+    },
+    "B": {
+      "item": "minecraft:ender_pearl"
+    },
+    "C": {
+      "item": "minecraft:chorus_fruit"
+    }
+  },
+  "result": {
+    "item": "largesuperpotato:ender_potato",
+    "count": 4
+  }
+}

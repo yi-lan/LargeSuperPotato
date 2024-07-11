@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "largesuperpotato:potato_piece"
+    }
+  ],
+  "result": [
+    {
+      "count": 1,
+      "item": "largesuperpotato:potato_chips"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "largesuperpotato:pigotato"
+  },
+  "result": "largesuperpotato:cooked_pigotato"
+}

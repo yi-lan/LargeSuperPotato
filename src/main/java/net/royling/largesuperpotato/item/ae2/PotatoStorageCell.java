@@ -26,11 +26,11 @@ public class PotatoStorageCell extends Item implements IBasicCellItem {
     }
     @Override
     public int getBytes(ItemStack cellItem){
-        return 16384;
+        return 1048576;
     }
     @Override
     public int getBytesPerType(ItemStack cellItem){
-        return 127;
+        return 16;
     }
     @Override
     public int getTotalTypes(ItemStack cellItem){

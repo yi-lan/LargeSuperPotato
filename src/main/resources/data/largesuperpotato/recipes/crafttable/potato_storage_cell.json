@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ACA",
+    "DBE",
+    "FFF"
+  ],
+  "key": {
+    "A": {
+      "item": "ae2:item_storage_cell_256k"
+    },
+    "B": {
+      "item": "minecraft:potato"
+    },
+    "C": {
+      "item": "ae2:calculation_processor"
+    },
+    "D": {
+      "item": "ae2:logic_processor"
+    },
+    "E": {
+      "item": "ae2:engineering_processor"
+    },
+    "F": {
+      "item": "ae2:sky_dust"
+    }
+  },
+  "result": {
+    "item": "largesuperpotato:potato_storage_cell",
+    "count": 1
+  }
+}

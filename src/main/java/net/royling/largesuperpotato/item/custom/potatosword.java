@@ -39,7 +39,7 @@ public class potatosword extends SwordItem {
 
             @Override
             public Ingredient getRepairIngredient() {
-                return Ingredient.of(ItemTags.create(new ResourceLocation("forge:potatos")));
+                return Ingredient.of(ItemTags.create(new ResourceLocation("forge:potatoes")));
             }
         },3,-2.3f,new Item.Properties());
     }

@@ -1,10 +1,11 @@
 package net.royling.largesuperpotato;
 
 import com.mojang.logging.LogUtils;
+import com.mojang.serialization.Codec;
 import net.minecraft.client.Minecraft;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.loot.IGlobalLootModifier;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -14,10 +15,15 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.royling.largesuperpotato.item.AEItem;
-import net.royling.largesuperpotato.item.ModCreativeTab;
-import net.royling.largesuperpotato.item.ModItem;
-import net.royling.largesuperpotato.item.PCItem;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
+import net.royling.largesuperpotato.item.*;
+import net.royling.largesuperpotato.item.ae2.AEItem;
+import net.royling.largesuperpotato.item.create.CreatePotatoItem;
+import net.royling.largesuperpotato.item.potatodelight.DelightItem;
+import net.royling.largesuperpotato.item.potatodelight.PotatoDelightTab;
+import net.royling.largesuperpotato.item.priomgemcreate.PCItem;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -35,6 +41,7 @@ public class LargeSuperPotato
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModCreativeTab.register(modEventBus);
+        PotatoDelightTab.register(modEventBus);
 
         ModItem.register(modEventBus);
 
@@ -44,10 +51,19 @@ public class LargeSuperPotato
         if(ModList.get().isLoaded("ae2")){
             AEItem.register(modEventBus);
         }
+        if(ModList.get().isLoaded("create")) {
+            CreatePotatoItem.register(modEventBus);
+        }
+        if(ModList.get().isLoaded("farmersdelight"))
+        {
+            DelightItem.register(modEventBus);
+        }
 
         modEventBus.addListener(this::commonSetup);
 
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
+
 
         modEventBus.addListener(this::addCreative);
 

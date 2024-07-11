@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "largesuperpotato:item/2_0/potatostarsword"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "largesuperpotato:potatosword"
+  },
+  "loops": 2,
+  "results": [
+    {
+      "item": "largesuperpotato:potato_gear_sword"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "largesuperpotato:potatosword"
+        },
+        {
+          "item": "create:cogwheel"
+        }
+      ],
+      "results": [
+        {
+          "item": "largesuperpotato:potatosword"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "largesuperpotato:potatosword"
+        },
+        {
+          "item": "largesuperpotato:potato_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "item": "largesuperpotato:potatosword"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "largesuperpotato:potatosword"
+        },
+        {
+          "item": "create:copper_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "largesuperpotato:potatosword"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "largesuperpotato:potatosword"
+  }
+}

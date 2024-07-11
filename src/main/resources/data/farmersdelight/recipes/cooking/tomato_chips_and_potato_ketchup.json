@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "largesuperpotato:potato_ketchup"
+    },
+    {
+      "item": "largesuperpotato:tomato_chips"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "largesuperpotato:tomato_chips_and_potato_ketchup"
+  }
+}

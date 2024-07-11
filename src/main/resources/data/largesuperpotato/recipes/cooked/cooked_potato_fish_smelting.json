@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "largesuperpotato:potato_fish"
+  },
+  "result": "largesuperpotato:cooked_potato_fish"
+}

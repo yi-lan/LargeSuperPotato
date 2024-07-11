@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AB",
+    "BA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:potato"
+    },
+    "B": {
+      "item": "minecraft:porkchop"
+    }
+  },
+  "result": {
+    "item": "largesuperpotato:pigotato"
+  }
+}

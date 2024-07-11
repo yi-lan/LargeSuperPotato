@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:egg"
+    },
+    "B": {
+      "item": "minecraft:potato"
+    },
+    "C": {
+      "item": "minecraft:feather"
+    }
+  },
+  "result": {
+    "item": "largesuperpotato:chicken_potato",
+    "count": 1
+  }
+}

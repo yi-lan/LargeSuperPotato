@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "largesuperpotato:potato_ingot"
+    }
+  ],
+  "results": [
+    {
+      "item": "largesuperpotato:potato_sheet"
+    }
+  ]
+}

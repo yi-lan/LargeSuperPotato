@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:potato"
+    }
+  ],
+  "result": [
+    {
+      "count": 2,
+      "item": "largesuperpotato:potato_piece"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

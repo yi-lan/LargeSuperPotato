@@ -8,26 +8,24 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.royling.largesuperpotato.LargeSuperPotato;
 import net.royling.largesuperpotato.item.ae2.PotatoStorageCell;
-import net.royling.largesuperpotato.item.custom.EXPotato;
-import net.royling.largesuperpotato.item.custom.EnderPotato;
-import net.royling.largesuperpotato.item.custom.potatosword;
+import net.royling.largesuperpotato.item.custom.*;
 
 public class ModItem {
-    public static final DeferredRegister<Item> ITEMS =
+   public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, LargeSuperPotato.MOD_ID);
-
+ // <editor-fold desc="1.0item">
     public static final RegistryObject<Item> PIGOTATO = ITEMS.register("pigotato",
             ()->new Item(new Item.Properties().food(ModFood.PIGOTATO)));
     public static final RegistryObject<Item> CREEPOTATO = ITEMS.register("creepotato",
             ()->new Item(new Item.Properties().food(ModFood.CREEPOTATO)));
     public static final RegistryObject<Item> EXPOTATO = ITEMS.register("expotato",
-            ()->new EXPotato());
+            EXPotato::new);
     public static final RegistryObject<Item> DIAMOND_POTATO = ITEMS.register("diamond_potato",
             ()->new Item(new Item.Properties().food(ModFood.DIAMOND_POTATO)));
     public static final RegistryObject<Item> EMERALD_POTATO = ITEMS.register("emerald_potato",
             ()->new Item(new Item.Properties().food(ModFood.EMERALD_POTATO)));
     public static final RegistryObject<Item> ENDER_POTATO = ITEMS.register("ender_potato",
-            ()->new EnderPotato());
+            EnderPotato::new);
     public static final RegistryObject<Item> GLASS_POTATO = ITEMS.register("glass_potato",
             ()->new Item(new Item.Properties().food(ModFood.GLASS_POTATO)));
     public static final RegistryObject<Item> CHROME_POTATO = ITEMS.register("chrome_potato",
@@ -40,7 +38,7 @@ public class ModItem {
             ()->new Item(new Item.Properties().food(ModFood.NETHER_POTATO)));
     public static final RegistryObject<Item> NETHERITE_POTATO = ITEMS.register("netherite_potato",
             ()->new Item(new Item.Properties().food(ModFood.NETHERITE_POTATO)));
-    public static final RegistryObject<Item> NETHERI_STAR_POTATO = ITEMS.register("nether_star_potato",
+    public static final RegistryObject<Item> NETHER_STAR_POTATO = ITEMS.register("nether_star_potato",
             ()->new Item(new Item.Properties().food(ModFood.NETHER_STAR_POTATO)));
     public static final RegistryObject<Item> OBSIDIAN_POTATO = ITEMS.register("obsidian_potato",
             ()->new Item(new Item.Properties().food(ModFood.OBSIDIAN_POTATO)));
@@ -67,9 +65,14 @@ public class ModItem {
     public static final RegistryObject<Item> BASKET_POTATO = ITEMS.register("basket_potato",
             ()->new Item(new Item.Properties().food(ModFood.BASKET_POTATO)));
     public static final RegistryObject<Item> POTATOSWORD =ITEMS.register("potatosword",
-            ()->new potatosword());
-
-
+            potatosword::new);
+    public static final RegistryObject<Item> NETHER_STAR_UPDATE_TEMPLATE =ITEMS.register("nether_star_update_template",
+            ()->new Item(new Item.Properties()));
+    // </editor-fold>
+   public static final RegistryObject<Item> COMPRESS_POTATO =ITEMS.register("compress_potato",
+           ()->new Item(new Item.Properties()));
+   public static final RegistryObject<Item> POTATO_STAR_SWORD=ITEMS.register("potato_star_sword",
+           potatostarsword::new);
 
 
 
