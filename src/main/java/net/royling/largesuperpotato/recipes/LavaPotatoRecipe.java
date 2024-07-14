@@ -4,7 +4,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.brewing.IBrewingRecipe;
-import net.royling.largesuperpotato.item.ModItem;
+import net.royling.largesuperpotato.item.p1_0.ModItem;
 
 public class LavaPotatoRecipe implements IBrewingRecipe {
 

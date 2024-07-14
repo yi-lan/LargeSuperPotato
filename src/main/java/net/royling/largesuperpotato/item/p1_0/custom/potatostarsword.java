@@ -1,20 +1,19 @@
-package net.royling.largesuperpotato.item.custom;
+package net.royling.largesuperpotato.item.p1_0.custom;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 
 
-
-public class potatosword extends SwordItem {
-    public potatosword(){
+public class potatostarsword extends SwordItem {
+    public potatostarsword(){
         super(new Tier() {
             @Override
             public int getUses() {
-                return 777;
+                return 2560;
             }
 
             @Override
@@ -24,23 +23,23 @@ public class potatosword extends SwordItem {
 
             @Override
             public float getAttackDamageBonus() {
-                return 3f;
+                return 5f;
             }
 
             @Override
             public int getLevel() {
-                return 1;
+                return 4;
             }
 
             @Override
             public int getEnchantmentValue() {
-                return 2;
+                return 15;
             }
 
             @Override
             public Ingredient getRepairIngredient() {
-                return Ingredient.of(ItemTags.create(new ResourceLocation("forge:potatoes")));
+                return Ingredient.of(Items.NETHER_STAR);
             }
-        },3,-2.3f,new Item.Properties());
+        },4,-2.3f,new Properties());
     }
 }

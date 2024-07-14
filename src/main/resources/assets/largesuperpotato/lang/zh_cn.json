@@ -45,5 +45,20 @@
   "item.largesuperpotato.tomato_chips_and_potato_ketchup": "番茄条配土豆酱",
   "item.largesuperpotato.compress_potato": "压缩土豆",
   "item.largesuperpotato.pestle_and_mortar": "杵与臼",
-  "item.largesuperpotato.potato_star_sword": "土豆之星剑"
+  "item.largesuperpotato.potato_star_sword": "土豆之星剑",
+  "death.attack.eat_knife": "%1$s 死于胃出血",
+  "death.attack.eat_knife.item": "%1$s 死于胃出血",
+  "death.attack.eat_knife.player": "%1$s 死于胃出血",
+  "effect.largesuperpotato.stomach_bleeding": "胃出血",
+  "advancements.largesuperpotato.title": "欢迎来到土豆王国！",
+  "advancements.largesuperpotato.description": "你安装了大型超级马铃薯模组",
+  "advancements.knifeswallowingmaster.title": "你是认真的？",
+  "advancements.knifeswallowingmaster.description": "吞刀自尽",
+  "item.largesuperpotato.potato_energy_storage": "土豆储能单元",
+  "item.largesuperpotato.potato_energy_storage_ex": "土豆储能单元(进阶)",
+  "item.largesuperpotato.potato_energy_storage_super": "土豆储能单元(极限)",
+  "tooltip.largesuperpotato.energy": "能量: %d  / %d  FE",
+  "creativetab.lspother": "大型超级马铃薯-其他",
+  "curios.identifier.battery": "电池",
+  "tooltip.largesuperpotato.energyspeed": "最大传输: %1$s KFE/Tick"
 }

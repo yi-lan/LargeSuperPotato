@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "largesuperpotato:potato_knife"
+    },
+    "title": {
+      "translate": "advancements.knifeswallowingmaster.title"
+    },
+    "description": {
+      "translate": "advancements.knifeswallowingmaster.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "largesuperpotato:stomach_bleeding": {}
+        }
+      }
+    }
+  },
+  "parent": "largesuperpotato:superpotato"
+}

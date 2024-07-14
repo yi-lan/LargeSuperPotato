@@ -45,5 +45,16 @@
   "item.largesuperpotato.tomato_chips_and_potato_ketchup": "番茄條配馬鈴薯醬",
   "item.largesuperpotato.compress_potato": "壓縮馬鈴薯",
   "item.largesuperpotato.pestle_and_mortar": "杵與臼",
-  "item.largesuperpotato.potato_star_sword": "馬鈴薯之星劍"
+  "item.largesuperpotato.potato_star_sword": "馬鈴薯之星劍",
+  "death.attack.eat_knife": "%1$s died of stomach bleeding",
+  "death.attack.eat_knife.item": "%1$s died of stomach bleeding",
+  "death.attack.eat_knife.player": "%1$s died of stomach bleeding",
+  "effect.largesuperpotato.stomach_bleeding": "Stomach Bleeding",
+  "advancements.largesuperpotato.title": "Welcome to PotatoKingdom！",
+  "advancements.largesuperpotato.description": "You add a mod named LargeSuperPotato！",
+  "advancements.knifeswallowingmaster.title": "Are you serious?",
+  "advancements.knifeswallowingmaster.description": "Commit suicide by swallowing a knife",
+  "tooltip.largesuperpotato.energy": "Energy: %d K / %d K FE",
+  "item.largesuperpotato.potato_energy_storage": "Potato Energy Cell",
+  "creativetab.lspother": "LSP-Others"
 }

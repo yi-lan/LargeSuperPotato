@@ -45,6 +45,21 @@
   "item.largesuperpotato.tomato_chips_and_potato_ketchup": "Tomato Chips And Potato Ketchup",
   "item.largesuperpotato.compress_potato":"Compress Potato",
   "item.largesuperpotato.pestle_and_mortar":"Pestle And Mortar",
-  "item.largesuperpotato.potato_star_sword": "Potato Star Sword"
+  "item.largesuperpotato.potato_star_sword": "Potato Star Sword",
+  "death.attack.eat_knife": "%1$s died of stomach bleeding",
+  "death.attack.eat_knife.item": "%1$s died of stomach bleeding",
+  "death.attack.eat_knife.player": "%1$s died of stomach bleeding",
+  "effect.largesuperpotato.stomach_bleeding": "Stomach Bleeding",
+  "advancements.largesuperpotato.title": "Welcome to PotatoKingdom！",
+  "advancements.largesuperpotato.description": "You add a mod named LargeSuperPotato！",
+  "advancements.knifeswallowingmaster.title": "Are you serious?",
+  "advancements.knifeswallowingmaster.description": "Commit suicide by swallowing a knife",
+  "tooltip.largesuperpotato.energy": "Energy: %d  / %d  FE",
+  "item.largesuperpotato.potato_energy_storage": "Potato Energy Cell",
+  "item.largesuperpotato.potato_energy_storage_ex": "EX Potato Energy Cell",
+  "item.largesuperpotato.potato_energy_storage_super": "SUPER Potato Energy Cell",
+  "creativetab.lspother": "LSP-Others",
+  "curios.identifier.battery": "Battery",
+  "tooltip.largesuperpotato.energyspeed": "maxSpeed: %1$s KFE/Tick"
 
 }

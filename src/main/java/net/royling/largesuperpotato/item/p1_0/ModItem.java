@@ -1,14 +1,15 @@
-package net.royling.largesuperpotato.item;
+package net.royling.largesuperpotato.item.p1_0;
 
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.ModList;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.royling.largesuperpotato.LargeSuperPotato;
-import net.royling.largesuperpotato.item.ae2.PotatoStorageCell;
-import net.royling.largesuperpotato.item.custom.*;
+import net.royling.largesuperpotato.item.p1_0.custom.EXPotato;
+import net.royling.largesuperpotato.item.p1_0.custom.EnderPotato;
+import net.royling.largesuperpotato.item.p1_0.custom.potatostarsword;
+import net.royling.largesuperpotato.item.p1_0.custom.potatosword;
 
 public class ModItem {
    public static final DeferredRegister<Item> ITEMS =

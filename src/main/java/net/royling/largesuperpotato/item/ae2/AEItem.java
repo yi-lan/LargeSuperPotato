@@ -13,7 +13,10 @@ public class AEItem {
     public static final RegistryObject<Item> POTATO_STORAGE_CELL =ITEMS.register("potato_storage_cell",
             ()->new PotatoStorageCell(new Item.Properties().stacksTo(1)));
 
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
+
+
 }

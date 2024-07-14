@@ -5,6 +5,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.royling.largesuperpotato.item.p1_0.ModFood;
 
 
 public class PotatoKnife extends SwordItem {
@@ -39,6 +40,6 @@ public class PotatoKnife extends SwordItem {
             public Ingredient getRepairIngredient() {
                 return Ingredient.of(ItemTags.create(new ResourceLocation("forge:potatoes")));
             }
-        },1,-2.0f,new Properties());
+        },1,-2.0f,new Properties().food(ModFood.POTATO_KNIFE));
     }
 }

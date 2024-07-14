@@ -1,9 +1,9 @@
-package net.royling.largesuperpotato.item;
+package net.royling.largesuperpotato.item.p1_0;
 
-import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
+import net.royling.largesuperpotato.effect.ModMobEffects;
 
 public class ModFood {
     // <editor-fold desc="1.0food">
@@ -109,5 +109,9 @@ public class ModFood {
             .alwaysEat().nutrition(1).saturationMod(0.2f).build();
     public static final FoodProperties TOMATO_CHIPS_AND_POTATO_KETCHUP =new FoodProperties.Builder()
             .alwaysEat().nutrition(10).saturationMod(0.8f).build();
+    public static final FoodProperties POTATO_KNIFE = new FoodProperties.Builder()
+            .alwaysEat().nutrition(1).saturationMod(0)
+            .effect(()->new MobEffectInstance(ModMobEffects.STOMACH_BLEEDING.get(),1200,1),1f)
+            .build();
 
 }

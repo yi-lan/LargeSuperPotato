@@ -12,12 +12,16 @@ import net.minecraftforge.registries.RegistryObject;
 import net.royling.largesuperpotato.LargeSuperPotato;
 import net.royling.largesuperpotato.item.ae2.AEItem;
 import net.royling.largesuperpotato.item.create.CreatePotatoItem;
+import net.royling.largesuperpotato.item.feitem.FEItem;
+import net.royling.largesuperpotato.item.p1_0.ModItem;
 import net.royling.largesuperpotato.item.potatodelight.DelightItem;
 import net.royling.largesuperpotato.item.priomgemcreate.PCItem;
 
 public class ModCreativeTab {
     public static final DeferredRegister<CreativeModeTab> LARGESUPERPOTATOS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, LargeSuperPotato.MOD_ID);
+    public static final DeferredRegister<CreativeModeTab> LSPOTHERS =
+            DeferredRegister.create(Registries.CREATIVE_MODE_TAB,LargeSuperPotato.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> LARGESUPERPOTATO = LARGESUPERPOTATOS.register("largesuperpotato",
             ()->CreativeModeTab.builder().icon(()->new ItemStack(ModItem.PIGOTATO.get()))
@@ -52,18 +56,26 @@ public class ModCreativeTab {
                         pOutput.accept(ModItem.SLIME_POTATO.get());
                         pOutput.accept(ModItem.CHICKEN_POTATO.get());
                         pOutput.accept(ModItem.BASKET_POTATO.get());
-                        pOutput.accept(ModItem.POTATOSWORD.get());
-                        pOutput.accept(ModItem.NETHER_STAR_UPDATE_TEMPLATE.get());
                         // </editor-fold>
-                        pOutput.accept(ModItem.COMPRESS_POTATO.get());
-                        pOutput.accept(ModItem.POTATO_STAR_SWORD.get());
-
-
-                        //原石工艺联动 原石土豆
                         if(ModList.get().isLoaded("primogemcraft")){
                             pOutput.accept(PCItem.PRIOMGEM_POTATO.get());
                         }
-                        //AE2 土豆單元
+                    })
+                    .build());
+
+    public static final RegistryObject<CreativeModeTab> LSPOTHER = LSPOTHERS.register("lspother",
+            ()->CreativeModeTab.builder().icon(()->new ItemStack(ModItem.POTATOSWORD.get()))
+                    .title(Component.translatable("creativetab.lspother"))
+                    .displayItems((pParameters,pOutput)->{
+                        pOutput.accept(ModItem.POTATOSWORD.get());
+                        pOutput.accept(ModItem.NETHER_STAR_UPDATE_TEMPLATE.get());
+                        pOutput.accept(ModItem.POTATO_STAR_SWORD.get());
+                        pOutput.accept(FEItem.POTATO_ENERGY_STORAGE.get());
+                        pOutput.accept(FEItem.POTATO_ENERGY_STORAGE_EX.get());
+                        pOutput.accept(FEItem.POTATO_ENERGY_STORAGE_SUPER.get());
+
+
+
                         if(ModList.get().isLoaded("ae2")){
                             pOutput.accept(AEItem.POTATO_STORAGE_CELL.get());
                         }
@@ -73,10 +85,21 @@ public class ModCreativeTab {
                             pOutput.accept(CreatePotatoItem.POTATO_SHEET.get());
                             pOutput.accept(CreatePotatoItem.POTATO_MECHANISM.get());
                         }
+                        if(ModList.get().isLoaded("farmersdelight")) {
+                            pOutput.accept(DelightItem.POTATO_CHIPS.get());
+                            pOutput.accept(DelightItem.POTATO_PIECE.get());
+                            pOutput.accept(DelightItem.POTATO_KNIFE.get());
+                            pOutput.accept(DelightItem.MASHED_POTATO.get());
+                            pOutput.accept(DelightItem.POTATO_KETCHUP.get());
+                            pOutput.accept(DelightItem.TOMATO_CHIPS.get());
+                            pOutput.accept(DelightItem.TOMATO_CHIPS_AND_POTATO_KETCHUP.get());
+                            pOutput.accept(DelightItem.PESTLE_AND_MORTAR.get());
+                        }
                     })
                     .build());
 
     public static void register(IEventBus eventBus){
         LARGESUPERPOTATOS.register(eventBus);
+        LSPOTHERS.register(eventBus);
     }
 }

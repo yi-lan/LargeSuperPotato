@@ -6,7 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.royling.largesuperpotato.LargeSuperPotato;
-import net.royling.largesuperpotato.item.ModFood;
+import net.royling.largesuperpotato.item.p1_0.ModFood;
 
 //原石工艺
 public class PCItem {

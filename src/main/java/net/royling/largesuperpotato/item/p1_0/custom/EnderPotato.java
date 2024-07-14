@@ -1,11 +1,11 @@
-package net.royling.largesuperpotato.item.custom;
+package net.royling.largesuperpotato.item.p1_0.custom;
 
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.royling.largesuperpotato.event.EnderPotatoEvent;
-import net.royling.largesuperpotato.item.ModFood;
+import net.royling.largesuperpotato.item.p1_0.ModFood;
 
 public class EnderPotato extends Item {
     public EnderPotato(){

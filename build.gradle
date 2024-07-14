@@ -83,11 +83,16 @@ minecraft {
         }
 
         client {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             property 'forge.enabledGameTestNamespaces', mod_id
+
         }
 
         server {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
             property 'forge.enabledGameTestNamespaces', mod_id
             args '--nogui'
         }
@@ -100,6 +105,8 @@ minecraft {
         }
 
         data {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
             // example of overriding the workingDirectory set in configureEach above
             workingDirectory project.file('run-data')
 
@@ -121,11 +128,24 @@ repositories {
             includeGroup 'appeng'
         }
     }
+    maven {
+        name = "Illusive Soulworks maven"
+        url = "https://maven.theillusivec4.top/"
+    }
+    maven { // JEI
+        url "https://maven.blamejared.com"
+    }
 }
 
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     compileOnly "appeng:appliedenergistics2-forge:15.2.8:api"
+    implementation fg.deobf("net.minecraftforge:forge:${minecraft_version}-${forge_version}")
+    compileOnly(fg.deobf("top.theillusivec4.curios:curios-forge:5.9.1+1.20.1:api"))
+    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:5.9.1+1.20.1")
+    compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:15.3.0.7")
+    compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:15.3.0.7")
+    runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge:15.3.0.7")
 }
 
 tasks.named('processResources', ProcessResources).configure {

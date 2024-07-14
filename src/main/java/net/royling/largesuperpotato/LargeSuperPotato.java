@@ -1,11 +1,9 @@
 package net.royling.largesuperpotato;
 
 import com.mojang.logging.LogUtils;
-import com.mojang.serialization.Codec;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.common.loot.IGlobalLootModifier;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -15,14 +13,13 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
-import net.royling.largesuperpotato.item.*;
+import net.royling.largesuperpotato.effect.ModMobEffects;
 import net.royling.largesuperpotato.item.ae2.AEItem;
 import net.royling.largesuperpotato.item.create.CreatePotatoItem;
+import net.royling.largesuperpotato.item.feitem.FEItem;
+import net.royling.largesuperpotato.item.ModCreativeTab;
+import net.royling.largesuperpotato.item.p1_0.ModItem;
 import net.royling.largesuperpotato.item.potatodelight.DelightItem;
-import net.royling.largesuperpotato.item.potatodelight.PotatoDelightTab;
 import net.royling.largesuperpotato.item.priomgemcreate.PCItem;
 import org.slf4j.Logger;
 
@@ -41,7 +38,6 @@ public class LargeSuperPotato
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModCreativeTab.register(modEventBus);
-        PotatoDelightTab.register(modEventBus);
 
         ModItem.register(modEventBus);
 
@@ -58,6 +54,9 @@ public class LargeSuperPotato
         {
             DelightItem.register(modEventBus);
         }
+        FEItem.register(modEventBus);
+
+        ModMobEffects.EFFECTS.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
